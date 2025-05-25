@@ -1,4 +1,7 @@
 import { Module } from '@nestjs/common';
+import { BookingScheduleController } from './booking-schedule.controller';
 
-@Module({})
+@Module({
+  controllers: [BookingScheduleController]
+})
 export class BookingScheduleModule {}

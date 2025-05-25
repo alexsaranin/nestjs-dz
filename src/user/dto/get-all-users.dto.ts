@@ -1,5 +1,5 @@
-export class GetAllUsersDto {
-  email: string;
-  offset: number;
-  limit: number;
+import { PaginationDto } from '../../dto/pagination.dto';
+
+export class GetAllUsersDto extends PaginationDto {
+  email?: string;
 }
